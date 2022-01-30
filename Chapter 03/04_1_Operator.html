@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //assignment operator, complex assignment operator
+      let y = 1;
+      console.log("y=" + y + "     y=1");
+      let x = y;
+      console.log("x=" + x + " y=" + y + " =");
+      x = 3;
+      console.log("x=" + x + " y=" + y + " x=3");
+      y = 2;
+      console.log("x=" + x + " y=" + y + " y=2");
+
+      //comparison operator
+      let d = 3;
+      let e = "3";
+      console.log(d == e); //type conversion
+      console.log(d != e); //type conversion
+      console.log(d === e); //with type compare
+      console.log(d !== e); //with type compare
+      console.log(d > e); //type conversion
+      console.log(d >= e); //type conversion
+      console.log(d <= e); //type conversion
+      console.log(d < e); //type conversion
+
+      //arithmetic operator
+      x = x + y; // x+=y plus operator
+      console.log("x=" + x + " y=" + y + " +");
+      x = x - y; // x-=y minus operator
+      console.log("x=" + x + " y=" + y + " -");
+      x = x * y; // x*=y multiply operator
+      console.log("x=" + x + " y=" + y + " *");
+      x = x / y; // x/=y divide operator
+      console.log("x=" + x + " y=" + y + " /");
+      x = x % y; // x%=y remainder operator
+      console.log("x=" + x + " y=" + y + " %");
+      x = 3;
+      console.log("x=" + x + " y=" + y + " x=3");
+      y = 2;
+      console.log("x=" + x + " y=" + y + " y=2");
+      x = x ** y; // x**=y exponent operator
+      console.log("x=" + x + " y=" + y + " **");
+      var f = 3;
+      console.log("f=" + f);
+      var g = ++f; //increment operator
+      console.log("f=" + f + " g=" + g + " g=++f");
+      g = f++; //increment operator
+      console.log("f=" + f + " g=" + g + " g=f++");
+      g = --f; //decrement operator
+      console.log("f=" + f + " g=" + g + " g=--f");
+      g = f--; //decrement operator
+      console.log("f=" + f + " g=" + g + " g=f--");
+      g = -f; //unary negation operator
+      console.log("f=" + f + " g=" + g + " -f");
+
+      //logical operator
+      let o1 = true && true; // AND
+      console.log(o1);
+      let o2 = true && false; // AND
+      console.log(o2);
+      let o3 = true || false; // OR
+      console.log(o3);
+      let o4 = 3 == 3 && 4 == 4; // 1st AND, 2nd OR
+      console.log(o4);
+      let i1 = !true; // NOT
+      console.log(i1);
+      let i2 = !false; // NOT
+      console.log(i2);
+      let i3 = !(3 == 3); // NOT
+      console.log(i3);
+      let i4 = !(3 == 4); // NOT
+      console.log(i4);
+
+      //string operator
+      console.log("Vanilla" + " JS");
+      console.log("OS" + 2); // type conversion
+      console.log("3" + 3); // type conversion
+      console.log(3 + "3"); // type conversion
+
+      //ternary operator
+      let age = 18;
+      let isAdult = age >= 18 ? true : false; // condition ? value1 : value2
+      console.log(isAdult);
+      let point = 92;
+      let grade = point >= 90 ? "A" : point >= 80 ? "B" : "C"; // condition ? value1 : value2
+      console.log(grade);
+    </script>
+  </body>
+</html>

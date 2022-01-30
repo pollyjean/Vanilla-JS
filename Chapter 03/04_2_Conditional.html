@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //conditional (false == false, undefined, null, 0, NaN(Not a Number), "")
+      //if
+      let a = 5;
+      console.log("a = " + a);
+      let b = 7;
+      console.log("b = " + b);
+      console.log(a > b);
+      console.log(a == b);
+      console.log(a < b);
+      if (a > b) {
+        a = a + b;
+      } else if (a == b) {
+        a = a * b;
+      } else {
+        b = b - a;
+      }
+      console.log("a = " + a + " b = " + b);
+
+      //switch
+      let date = new Date();
+      let day = date.getDay();
+      let dayName = "";
+      switch (day) {
+        case 0:
+          dayName = "Sunday";
+          break;
+        case 1:
+          dayName = "Monday";
+          break;
+        case 2:
+          dayName = "Thuesday";
+          break;
+        case 3:
+          dayName = "Wednesday";
+          break;
+        case 4:
+          dayName = "Thursday";
+          break;
+        case 5:
+          dayName = "Friday";
+          break;
+        case 6:
+          dayName = "Saturday";
+          break;
+        default:
+          dayName = "Sunday";
+          break;
+      }
+      console.log(date + "\nToday is " + dayName);
+
+      //loop
+      //for-loop
+      let brands = ["Apple", "Google", "Facebook", "Amazon"];
+      console.log(brands);
+      for (let i = 0; i < brands.length; i++) {
+        1;
+        console.log(brands[i]);
+      }
+      //for-in(Object) each key value
+      let person = { fname: "Sora", lname: "Lee", age: 52 };
+      for (const key in person) {
+        console.log(person[key]);
+      }
+      //for-in(Array) : each index number
+      for (const brand in brands) {
+        console.log(brand);
+      }
+      //for-of(Array, Map, String : iterable) : each key value
+      let language = "Script";
+      for (const alphabet of language) {
+        console.log(alphabet);
+      }
+      //while
+      let inputPrice = 8000;
+      let coinUnit = 500;
+      let coinCount = 0;
+      while (inputPrice >= coinUnit) {
+        inputPrice -= coinUnit;
+        coinCount++;
+      }
+      console.log(coinCount);
+    </script>
+  </body>
+</html>

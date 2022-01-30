@@ -1,0 +1,1 @@
+function calc(c,e,a){switch(a){case"+":return c+e;case"-":return c-e;case"*":return c*e;case"/":return c/e}}let calc1=calc(5,6,"-");console.log(calc1);
