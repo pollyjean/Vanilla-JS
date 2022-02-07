@@ -1,0 +1,1 @@
+function myFunc(){console.log(this)}console.log(this),myFunc();let person={fName:"Sora",lName:"Lee",fullName:function(){return this.fName+" "+this.lName}};console.log(person.fullName());

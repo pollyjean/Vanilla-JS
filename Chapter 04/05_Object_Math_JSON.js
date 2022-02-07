@@ -35,4 +35,18 @@ function getRndInt(min, max) {
 }
 console.log(getRndInt(5, 71));
 
-//JSON
+//JSON is data format
+let dataSample = {
+  members: [
+    { fName: "John", lName: "Lennon" },
+    { fName: "Paul", lName: "McCartney" },
+    { fName: "George", lName: "Harrison" },
+    { fName: "Ringo", lName: "Starr" },
+  ],
+};
+let strDataSample = JSON.stringify(dataSample); // Object to String
+console.log(dataSample);
+console.log(strDataSample);
+
+let objDataSample = JSON.parse(strDataSample); // String to Object
+console.log(objDataSample);

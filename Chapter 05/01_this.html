@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="01_this-min.js"></script>
+    <!-- this == HTML DOM -->
+    <button onclick="this.style.backgroundColor='red'">버튼 배경색 바꾸기</button>
+    <button onclick="callFn(this)">What is this?</button>
+    <script>
+      function callFn(obj) {
+        console.log(obj);
+        console.log(obj.innerText);
+      }
+    </script>
+    <select onchange="chgSel(this)">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+    </select>
+    <script>
+      function chgSel(obj) {
+        console.log(obj);
+        console.log(obj.value);
+      }
+    </script>
+  </body>
+</html>
