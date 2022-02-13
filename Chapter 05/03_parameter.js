@@ -40,6 +40,14 @@ const sayHello2 = (name) => "Hello " + name;
 
 console.log(sayHello2("Everyone"));
 
+//Template Literals
+function genHello(name) {
+  let name2 = "Lee";
+  console.log(`Hello ${name2}. Welcome ${name}`);
+}
+
+genHello("Dude");
+
 //Object literal syntax extension
 let firstName = "Taiji";
 let lastName = "Seo";
@@ -54,3 +62,45 @@ let artist = {
   age: 20,
 };
 console.log(artist);
+
+//Spread Operator
+let numbers1 = "5678";
+let numbers2 = [1, 2, 3, 4];
+let numbers3 = [...numbers2, ...numbers1];
+console.log(numbers3);
+
+// Object Destructuring
+function getPersonal() {
+  return {
+    fName: "Taiji",
+    lName: "Seo",
+    age: 17,
+    email: "ceo@seotaijicompany.com",
+    city: "Seoul",
+    country: "Korea",
+  };
+}
+
+let { fName, lName } = getPersonal();
+console.log(fName);
+
+function displayName({ fName, lName }) {
+  console.log(`${lName} ${fName}`);
+}
+
+displayName(getPersonal());
+
+// Array Destructuring
+function getScores() {
+  return [90, 65, 73, 89, 33, 52];
+}
+// let [x, y, z] = getScores();
+let [x, y, ...args] = getScores();
+console.log(y);
+console.log(args[1]);
+function getProfile() {
+  return [17, "Junior", ["HTML", "React", "Svelte"]];
+}
+
+let [age, position, [...likes]] = getProfile();
+console.log(likes);
