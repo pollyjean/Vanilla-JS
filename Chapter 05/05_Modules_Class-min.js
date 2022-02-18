@@ -1,0 +1,1 @@
+export function log(o){console.log(o)}export function error(o){console.error(o)}
